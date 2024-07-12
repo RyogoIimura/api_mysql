@@ -1,0 +1,24 @@
+起動
+  $ mysql -u root -p
+
+db : api_mysql
+table : user
+  $ SHOW databases;
+  $ CREATE DATABASE api_mysql;
+  $ USE api_mysql;
+  $ SHOW tables;
+  $ desc user;
+  $ drop table user;
+  $ quit;
+
+table 作成
+  create table user (
+  id int,
+  name varchar(10),
+  address varchar(10)
+  );
+table にデータ挿入
+  insert into user values
+  (1, 'Ryogo', 'Kanagwa');
+テーブルの全カラム全行を取得
+  SELECT * FROM user;
